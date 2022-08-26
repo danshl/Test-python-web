@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #Tryagain{
+     background-color: #DF4242 ;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+        left:  -550px;
+        bottom :70px
+    }
+
+    /*Bottom submit*/
+    input[type=submit] {
+  background-color: #163057;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+        left: -480px;
+        bottom :75px
+    }
+
+
+    /*Background and Navigation bar*/
+    body {
+    background-image: url('https://logicode.study/wp-content/uploads/2021/06/Online-Course_3.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #4E5B75;
+    }
+
+    ul {
+        padding: 0;
+        float: right;
+        list-style: none;
+        background: #f2f2f2;
+        direction: rtl;
+
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: right;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+     /*Headline*/
+    h1{
+         border-top-style: solid;
+          border-bottom-style: solid;
+
+    }
+
+     /*Textbox question and answer*/
+    div.ans_text{
+         position: relative;
+        left: -230px;
+        bottom :-40px
+    }
+
+    div.ans_textbox{
+        position: relative;
+        left: 0px;
+        bottom :00px
+    }
+
+    div.que{
+        position: relative;
+        left: -60px;
+        bottom :-40px
+    }
+
+    div.a{
+        position: relative;
+        left: 80px;
+        bottom :-40px
+    }
+
+</style>
+
+</head>
+
+<body>
+    <h1 style="text-align:center ; font-family: Times ; color:#163057">תרגיל 5 - צופן הזזה / שחלוף לטקסט</h1>
+  <ul>
+
+  <li>
+            <a href="/" style="color:white ; background-color:#163057" >דף הבית</a>
+            <a href="#">פונקציות-מתחילים ▾</a>
+            <ul class="dropdown">
+                <li><a href="\exc1">תרגיל 1</a></li>
+                <li><a href="\exc2">תרגיל 2</a></li>
+                <li><a href="\exc3">תרגיל 3</a></li>
+                <li><a href="\exc4">תרגיל 4</a></li>
+                <li><a href="\exc5">תרגיל 5</a></li>
+            </ul>
+        </li>
+
+  </ul>
+
+<div class="que" dir="rtl">
+      <p style="color:#163057"><label for="w3review"><b>הנחיות: </b></label></p>
+      <div class="que.a" dir="rtl">
+
+ <textarea id="w3review1" name="w3review" rows="4" cols="60" style="background-color:#f1f1f1">כתבו פונקציה בשום sol(text,x) המקבלת כקלט text ומספר ומוזיזה ימינה את כל המחרוזת.</textarea>            </div>
+</div>
+
+
+  <form action="exc5_check_sol" , method="post">
+    <div class="ans_text" dir="rtl" >
+        <p style="color:#163057"><label for="w3review"><b>הכנס את הקוד כאן: </b></label></p>
+        <div class="ans_textbox"  >
+            <textarea  class= "ex1" id="w3review" name="w3review" rows="15" cols="60" style="background-color:#f1f1f1" dir="ltr"  ></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+        <a id="Tryagain" href="#" dir="rtl">תשובתך אינה נכונה, אנא נסה שנית.</a>
+    </div>
+  </form>
+
+
+
+
+</body>
+</html>
+
