@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    h1 {text-align: center;}
+    #demo {
+     position: relative;
+    left: 50px;
+    bottom :-260px;
+    }
+
+    body {
+    background-image: url('https://logicode.study/wp-content/uploads/2021/06/Online-Course_3.png');
+     background-position: center top;
+    background-repeat: no-repeat;
+    color: #4E5B75;
+    }
+
+    ul {
+        padding: 0;
+        float: right;
+        list-style: none;
+        background: #f2f2f2;
+        direction: rtl;
+
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: right;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+</style>
+</head>
+
+<body>
+  <ul>
+
+  <li>
+            <a href="/" style="color:white ; background-color:#163057" >דף הבית</a>
+            <a href="#">פונקציות-מתחילים ▾</a>
+            <ul class="dropdown">
+                <li><a href="\exc1">תרגיל 1</a></li>
+                <li><a href="\exc2">תרגיל 2</a></li>
+                <li><a href="\exc3">תרגיל 3</a></li>
+                <li><a href="\exc4">תרגיל 4</a></li>
+                <li><a href="\exc5">תרגיל 5</a></li>
+            </ul>
+        </li>
+
+  </ul>
+
+  <h1  id="demo" style="color:#163057;"></h1>
+
+  <script>
+  var i = 0;
+  var txt = 'Hi, Lets check your code!';
+  var speed = 35;
+  typeWriter()
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  </script>
+
+</body>
+
+</html>
