@@ -1,13 +1,12 @@
 import random
 import time
-from flask import Flask
 import flask
 import os
 import imp
 import Files_check as sol
 import Files_check.exc1_sol , Files_check.exc2_sol , Files_check.exc3_sol ,Files_check.exc4_sol , Files_check.exc5_sol
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route('/')
 def main():
