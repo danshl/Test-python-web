@@ -1,2 +1,2 @@
 # Test-python-web
-Code testing web for the "Digital School of Programming" website.
+Code testing web for "Loigcode Israel" (Digital School of Programming) website.
