@@ -1,8 +1,8 @@
 # Test-python-web
 Code testing web for "Loigcode Israel" (Digital School of Programming) website.
 
-
-description:
+_____
+Description:
 During my internship and summer learning experience, I had the opportunity to contribute to the development of the 'Logicode Israel' website. This innovative platform is dedicated to providing students and learners with the resources and tools they need to excel in the fields of language learning, networking, and independent study.
 
 I had the privilege of working closely with the site manager to create a parallel site that would serve as a valuable tool for learners to practice and hone their coding skills. This site is designed to help learners to practice exercises, and It's a great way to improve their coding skills and build a better understanding of the concepts.
